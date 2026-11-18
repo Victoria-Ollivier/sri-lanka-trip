@@ -1,5 +1,5 @@
 // Keeps the trip page working offline. Updates download in the background.
-const CACHE = 'sl-trip-v2';
+const CACHE = 'sl-trip-52';
 const FILES = ['./', './index.html', './manifest.json', './icon-180.png', './icon-192.png', './icon-512.png'];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)).then(() => self.skipWaiting()));
